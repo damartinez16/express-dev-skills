@@ -1,12 +1,12 @@
-const Skill = require('../models/skills');
+const Skill = require('../models/skill');
 
 module.exports = {
   index,
-  show, 
-  new: newSkill, 
-  create, 
+  show,
+  new: newSkill,
+  create,
   delete: deleteSkill,
-  edit, 
+  edit,
   update
 };
 

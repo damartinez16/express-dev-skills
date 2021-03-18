@@ -3,9 +3,7 @@ var router = express.Router();
 // Require the controller for the skills resource
 var skillsCtrl = require('../controllers/skills');
 
-// All actual paths begin with "/skills"
 
-/* GET /skills     --- "index" action/functionality */
 router.get('/', skillsCtrl.index);
 
 router.get('/new', skillsCtrl.new);
@@ -19,7 +17,6 @@ router.delete('/:id', skillsCtrl.delete);
 router.get('/:id/edit', skillsCtrl.edit);
 
 router.put('/:id', skillsCtrl.update);
-
 
 
 module.exports = router;

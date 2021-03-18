@@ -8,9 +8,9 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <a href="/skills">Skills</a>
+  <a href="/skills">Skill List</a>
   <h3><%= skill.skill %></h3>
-	<h3>Mastered: <%= skill.skill ? 'Yes' : 'No' %></h3>
+	<h3>Mastered: <%= skill.done ? 'Yes' : 'No' %></h3>
   <a href="/skills/<%= skill.id %>/edit">Edit</a>
 </body>
 </html>
